@@ -1,0 +1,51 @@
+footer
+    +positioning(flex,row,center,center,nowrap)
+    padding: 80px 15px
+    width: 100%
+    .footer_inside
+        +positioning(flex,row,space-between,flex-start,nowrap)
+        width: 1280px
+        .main
+            width: calc( 100% - 500px )
+            img
+                margin-bottom: 26px
+            p
+                font-family: 'TT Norms Pro Thin'
+                font-weight: bold
+                font-size: 19px
+        .sub
+            +positioning(flex,row,space-between,flex-start,nowrap)
+            width: 500px
+            div
+                h3
+                    height: 26px
+                    margin-bottom: 26px
+                    letter-spacing: 1px
+                p
+                    margin-bottom: 15px
+                    font-family: 'TT Norms Pro Thin'
+                    font-weight: bold
+                    font-size: 19px
+                    &:hover
+                        color: $darkgreen
+                        cursor: pointer
+
+@media (max-width: 890px)
+    footer
+        padding: 40px 15px
+        .footer_inside
+            flex-wrap: wrap
+            .main
+                width: 100%
+                order: 2
+                
+            .sub
+                width: 100%
+                order: 1
+                margin-bottom: 50px
+                
+
+
+
+
+

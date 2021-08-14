@@ -1,0 +1,63 @@
+.quote
+    +positioning(flex,row,center,center,nowrap)
+    background-color: $beige
+    width: 100%
+    padding: 160px 15px
+    .quote_inner
+        +positioning(flex,row,space-between,center,nowrap)
+        width: 1280px
+        .quote_inner_first
+            width: 48%
+            text-align: center
+            h2
+                font-size: 48px
+                letter-spacing: 1px
+                margin-bottom: 16px
+            p
+                font-family: 'TT Norms Pro Thin'
+                font-weight: bold
+                font-size: 20px
+                line-height: 170%
+                margin-bottom: 32px
+        .quote_inner_second
+            +positioning(flex,column,space-between,center,nowrap)
+            background-color: white
+            padding: 80px
+            width: 48%
+            p
+                margin-top: 28px
+                text-align: center
+                font-size: 24px
+                line-height: 160%
+            .ceo
+                text-align: center
+                margin-top: 38px
+                p
+                    font-size: 18px
+                    margin: 0
+                p:last-child
+                    font-family: 'TT Norms Pro Thin'
+                    font-size: 16px
+                    font-weight: bold
+                    margin-top: 8px
+
+@media (max-width: 750px)
+    .quote
+        padding: 80px 15px
+        .quote_inner
+            +positioning(flex,column,center,center,nowrap)
+            .quote_inner_first
+                margin-bottom: 15px
+                width: 100%
+                h2
+                    font-size: 29px
+                p
+                    font-size: 19px
+            .quote_inner_second
+                width: 100%
+                h2
+                    font-size: 29px
+                p
+                    font-size: 19px
+
+       

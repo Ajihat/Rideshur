@@ -1,0 +1,128 @@
+.drives
+    +positioning(flex,row,center,center,nowrap)
+    margin: 160px 0
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    .drives_inside
+        max-width: 1280px
+        +positioning(flex,column,center,center,nowrap)
+        div
+            position: relative
+            max-width: 560px
+            margin: 0 auto
+            h2
+                font-size: 48px
+                text-align: center
+                margin-bottom: 16px
+                letter-spacing: 1px
+            p
+                font-family: 'TT Norms Pro Thin'
+                font-size: 20px
+                font-weight: bold
+                text-align: center
+                line-height: 170%
+            img:first-of-type
+                position: absolute
+                top: 0
+                right: -142px
+                z-index: -1
+                animation-name: moving-down
+                animation-duration: 2s
+                animation-iteration-count: infinite
+                animation-direction: alternate
+                animation-timing-function: linear
+            img:nth-of-type(2)
+                position: absolute
+                bottom: 0
+                left: -142px
+                z-index: -1
+                animation-name: moving-up
+                animation-duration: 2.7s
+                animation-iteration-count: infinite
+                animation-direction: alternate
+                animation-timing-function: linear
+        .stats
+            +positioning(flex,row,space-between,center,nowrap)
+            max-width: 1280px
+            margin-top: 120px
+            div
+                +positioning(flex,column,space-between,center,nowrap)
+                width: 33%
+                text-align: center
+                padding-bottom: 40px
+                height: 450px
+                img
+                    position: static
+                    animation: none
+                    margin-bottom: 50px
+                p
+                    font-family: 'P22Mackinac-Medium'
+                    font-weight: normal
+            div:first-of-type
+                border-bottom: 4px solid rgb(207,83,100)
+            div:nth-of-type(2)
+                border-bottom: 4px solid rgb(246,202,102)                   
+            div:nth-of-type(3)
+                border-bottom: 4px solid $darkgreen 
+@keyframes moving-down
+    0%
+        transform: translate(0,0)
+    100%
+        transform: translate(0,20px)
+
+@keyframes moving-up
+    0%
+        transform: translate(0,0)
+    100%
+        transform: translate(0,-20px)
+
+@media (max-width: 880px)
+    .drives
+        .drives_inside
+            div
+                img:first-of-type
+                    right: -90px
+                img:nth-of-type(2)
+                    left: -90px
+            .stats
+                +positioning(flex,column,space-between,center,nowrap)
+                margin-top: 60px
+                div
+                    width: 100%
+                    height: auto
+
+@media (max-width: 770px)
+    .drives
+        margin: 80px 0
+        .drives_inside
+            div
+                h2
+                    font-size: 29px
+                p
+                    font-size: 19px
+                img
+                    display: none
+            .stats
+                div    
+                    img
+                        display: block
+@media (max-width: 480px)
+    .drives
+        .drives_inside
+            .stats
+                div
+                    img
+                        width: 100%
+                div:first-of-type
+                    img
+                        max-width: 230px
+
+
+
+
+
+
+        
+
+

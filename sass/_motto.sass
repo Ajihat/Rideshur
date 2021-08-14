@@ -1,0 +1,56 @@
+.main_wrapper
+    +positioning(flex,column,flex-start,center,wrap)
+    max-width: 1280px
+    padding: 180px 15px 0px 15px
+    .motto
+        text-align: center
+        max-width: 740px
+        color: $fontColorMain
+        h1
+            font-size: 62px
+            line-height: 72px
+            margin-bottom: 23px
+            letter-spacing: 1px
+        p
+            font-size: 20px
+            line-height: 170%
+            font-family: 'TT Norms Pro Thin'
+            font-weight: bold
+            margin-bottom: 40px
+        button
+            +positioning(flex,row,space-between,center,nowrap)
+            border: none
+            width: 200px
+            height: 60px        
+            margin: 0 auto
+            background-color: $darkgreen
+            cursor: pointer
+            border-radius: 3px
+            i
+                height: 60px
+                width: 58px
+                line-height: 60px
+                font-size: 16px
+                background-color: $lightgreen
+                color: white
+                border-top-right-radius: 3px
+                border-bottom-right-radius: 3px
+                transition: padding-left .3s  
+            p
+                margin-left: 28px
+                margin-bottom: 0px
+                color: white
+                font-family: 'P22Mackinac-Medium'
+                font-weight: normal
+                font-size: 18px
+            &:hover i 
+                padding-left: 10px
+
+@media (max-width: 766px)
+    .main_wrapper
+        padding-top: 120px
+        .motto
+            h1
+                font-size: 42px
+                line-height: 48px
+
