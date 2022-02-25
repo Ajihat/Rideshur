@@ -11,12 +11,7 @@ window.addEventListener("scroll", function(){
     }
 })
 
-    
-
-// forImages.forEach(forImage => {forImage.addEventListener('mouseover', event => {
-//         console.log("Myszka wjechała")
-//     })
-//   })
+  
 
 function mouseOver() {
     forImages.forEach(forImage => forImage.style.opacity = "0.6")
